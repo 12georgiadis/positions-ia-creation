@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>A-synthese-positions-ia-arts</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  :root{--fg:#1b1b1b;--muted:#6a6a6a;--bg:#fbfaf7;--accent:#7a1f1f;--rule:#e6e2da;--code:#f2efe9;}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;max-width:none;padding:0;background:var(--bg);color:var(--fg);
+    font-family:"Iowan Old Style",Palatino,"Palatino Linotype",Georgia,serif;
+    font-size:19px;line-height:1.72;}
+  .wrap{max-width:1280px;width:92%;margin:0 auto;padding:56px 40px 120px;}
+  h1,h2,h3,h4{line-height:1.25;font-weight:650;letter-spacing:-0.01em;}
+  h1{font-size:2.1rem;margin:0 0 .25em;}
+  h2{font-size:1.45rem;margin:2.4em 0 .6em;padding-top:.5em;border-top:1px solid var(--rule);}
+  h3{font-size:1.15rem;margin:1.8em 0 .4em;}
+  p{margin:0 0 1.1em;}
+  a{color:var(--accent);text-underline-offset:2px;}
+  strong{font-weight:680;}
+  em{color:#333;}
+  blockquote{margin:1.4em 0;padding:.4em 0 .4em 1.2em;border-left:3px solid var(--accent);color:#2a2a2a;}
+  blockquote p{margin:.3em 0;}
+  ul,ol{margin:0 0 1.1em;padding-left:1.4em;}
+  li{margin:.3em 0;}
+  hr{border:0;border-top:1px solid var(--rule);margin:2.6em 0;}
+  code{font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:.86em;background:var(--code);padding:.12em .4em;border-radius:4px;}
+  pre{background:var(--code);padding:16px 18px;border-radius:8px;overflow:auto;}
+  pre code{background:none;padding:0;}
+  table{border-collapse:collapse;width:100%;margin:1.4em 0;font-size:.86em;table-layout:auto;}
+  th,td{border:1px solid var(--rule);padding:.45em .6em;text-align:left;vertical-align:top;word-break:break-word;}
+  th{background:#f1ede5;font-weight:650;}
+  .meta{color:var(--muted);font-size:.8rem;margin-top:54px;padding-top:16px;border-top:1px solid var(--rule);}
+  @media (max-width:600px){body{font-size:17px}.wrap{width:100%;padding:40px 18px 80px}}
+  @media (min-width:1500px){.wrap{max-width:1380px}}
+  @media print{body{background:#fff}.wrap{max-width:none}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+<h1 id="intelligence-artificielle-générative-et-création">Intelligence artificielle générative et création</h1>
+<h3 id="cartographie-des-positions-et-contours-dune-troisième-voie-laissée-ouverte">Cartographie des positions et contours d'une troisième voie laissée ouverte</h3>
+<hr />
+<p><strong>Résumé.</strong> Le débat sur l'intelligence artificielle générative dans les arts se présente comme un choix entre adoption et refus. Cette opposition est un artefact de présentation : la plupart des positions hostiles sont en réalité réformistes. Cette note désempile les griefs distincts que le débat confond, rappelle le socle de revendications que presque toutes les positions partagent, cartographie le spectre qui va du réformisme à l'abolitionnisme, calibre la solidité des principaux arguments à l'appui de sources publiques, expose les contradictions internes du champ, et dégage les conditions auxquelles une position qui ne se range ni dans l'adoption ni dans le refus est structurellement disponible, dont elle décrit la forme sans prétendre la tenir.</p>
+<hr />
+<h2 id="1-le-faux-partage">1. Le faux partage</h2>
+<p>Le partage entre adoption et refus est un artefact de présentation. À examiner les prises de position publiques du champ artistique sur l'intelligence artificielle générative, la plupart de celles qui se présentent comme hostiles à la technologie sont en réalité réformistes : elles n'en demandent pas l'abolition mais l'encadrement, par le consentement, la rémunération et la transparence. Ainsi, la tribune des sociétés d'auteurs publiée en février 2025 avant le Sommet de Paris, qui a réuni plus de trente-quatre mille signatures, réclame le consentement préalable et la rémunération de l'usage des œuvres, mais refuse explicitement une opposition stérile entre culture et technologie. Le refus de principe, et le boycott appelé par une tribune parue dans la presse en juin 2026, n'occupent qu'une frange plus radicale. L'opposition frontale entre pour et contre dramatise comme une rupture ce qui est, sur le terrain, un désaccord de degré et de méthode interne à un même camp largement réformiste.</p>
+<p>Ce constat a une conséquence analytique. Tant qu'on raisonne dans les termes du partage binaire, on attribue à tout usage de l'outil une signification univoque, alors que les usages, les acteurs et les justifications diffèrent profondément. La première opération d'une analyse rigoureuse consiste donc à défaire ce partage, non pour trancher en faveur d'un camp, mais pour rendre visible la structure réelle du champ qu'il recouvre.</p>
+<h2 id="2-désempiler-les-griefs">2. Désempiler les griefs</h2>
+<p>Les griefs adressés à la technologie sont logiquement distincts et gagnent à être désempilés. Cinq se laissent isoler. Le premier porte sur la propriété intellectuelle : les modèles ont été entraînés sur des œuvres sans consentement ni contrepartie. Le deuxième porte sur le travail : substitution d'emplois, imposition de l'outil, continuité du revenu. Le troisième porte sur les droits de la personnalité : clonage de la voix et du visage. Le quatrième porte sur l'écologie des infrastructures de calcul : énergie, eau, foncier, métaux. Le cinquième porte sur les effets cognitifs et anthropologiques de l'outil.</p>
+<p>Ces griefs ne convergent pas, et leur disjonction a des conséquences pratiques. Une intelligence artificielle intégralement licenciée et rémunérée resterait aussi consommatrice d'énergie et de terres : l'argument propriétaire et l'argument écologique sont disjoints, et peuvent même s'opposer, dès lors qu'un marché de licences florissant suppose davantage de centres de calcul. Le grief du travail, collectif et statutaire, se distingue de la logique propriétaire des sociétés de gestion, dont le bénéfice se concentre sur les mieux dotés, et les organisations qui le portent s'en méfient. Tenir ces cinq griefs pour un bloc produit une indignation mobilisatrice mais analytiquement faible. Une position se mesure d'abord à sa capacité de choisir ceux qu'elle porte et ceux qu'elle écarte.</p>
+<h2 id="3-le-socle-commun">3. Le socle commun</h2>
+<p>Un socle de revendications est pourtant partagé par presque toutes les positions, des plus réformistes aux plus radicales. On y trouve la transparence des données d'entraînement, le consentement à l'usage des œuvres, la rémunération de cet usage, la primauté de la création humaine dans l'attribution des droits, la protection de la voix et du visage, l'étiquetage des contenus, la non-imposition de l'outil aux travailleurs, et le refus que la technologie s'installe par défaut, soustraite à toute délibération. Ce socle se retrouve aussi bien dans les chartes des sociétés de gestion que dans les déclarations syndicales internationales, par exemple celle qu'une coalition de syndicats de l'animation a portée au festival d'Annecy en juin 2025.</p>
+<p>Ce socle délimite un accord de fond que le clivage apparent recouvre. Il situe aussi le point à partir duquel les divergences sont réelles : elles ne portent pas sur ces demandes, mais sur la théorie de la technique qui les sous-tend et sur la conclusion stratégique qu'on en tire. C'est cette théorie et cette conclusion qu'il faut examiner, et non le socle, sur lequel l'accord est large.</p>
+<h2 id="4-cartographie-des-positions">4. Cartographie des positions</h2>
+<p>Le champ critique se structure selon plusieurs axes que le vocabulaire commun de la lutte tend à masquer. Le premier axe est celui de la position de fond : du réformisme, qui régule pour conserver l'outil, à une posture maximaliste, qui ajoute à la régulation l'exigence d'un statut social et le refus de la normalisation, jusqu'à l'abolitionnisme, qui vise le boycott et l'interdiction de principe, et qu'on peut caractériser, d'après les prises de parole les plus dures de juin 2026, comme une volonté de restreindre l'usage jusqu'à le rendre intenable. Le deuxième axe est celui de l'objet de la revendication, les cinq griefs déjà distingués, qu'une même organisation cumule souvent sans les hiérarchiser. Le troisième axe oppose l'opt-out, réservation des droits a posteriori qui est le régime en vigueur dans l'Union européenne, et l'opt-in, consentement préalable affirmatif que réclame une part croissante du champ : c'est la ligne de fracture juridique la plus disputée. Le quatrième axe sépare les moyens d'action, du recours législatif au recours contractuel, du label au marquage technique, de la mobilisation symbolique à la construction d'infrastructures de consentement.</p>
+<p>Le cinquième axe est philosophique et c'est le plus clivant. Il oppose ceux qui tiennent l'intelligence artificielle pour un outil, dont la faute serait dans l'usage non consenti, à ceux qui tiennent qu'elle n'est pas un simple outil mais une technologie porteuse d'une politique, et qu'il faudrait donc la refuser dans son principe. Le sixième axe distingue la critique de la technologie de la critique du capitalisme qui la déploie, et révèle une ligne de partage interne au camp du refus, entre une critique de gauche qui récuse explicitement l'essentialisme et un anti-industrialisme qui l'assume. Le septième axe est géographique et juridique : le régime européen du droit d'auteur fort et de la réservation par défaut diffère du régime états-unien du fair use contesté en justice, et des régimes asiatiques plus permissifs sur l'entraînement mais souvent plus avancés sur l'étiquetage obligatoire.</p>
+<p>Il n'y a donc pas un front, mais un espace traversé de fractures. Une position lucide se situe sur chacun de ces axes plutôt que de signer en bloc.</p>
+<h2 id="5-calibrage-des-arguments">5. Calibrage des arguments</h2>
+<p>Chaque grand argument du champ critique tient à une certaine hauteur et déborde au-delà. Les distinguer suppose de séparer ce qui est établi de ce qui est sur-affirmé, en revenant aux sources.</p>
+<p><strong>Propriété intellectuelle.</strong> L'argument tient sur les faits et déborde sur le droit. Le prélèvement massif et non consenti de corpus est documenté : les modèles d'image grand public ont été entraînés sur des bases extraites du web sans tri des droits, et le règlement d'un milliard et demi de dollars conclu en 2025 par Anthropic, qui visait l'acquisition piratée des livres ayant servi à l'entraînement, montre que la captation pouvait être illégale et lourdement sanctionnée. L'existence d'un marché de licences, des accords entre éditeurs de presse et développeurs aux contrats de banques d'images, atteste par ailleurs que la rémunération était possible, donc que la captation gratuite est une appropriation. En revanche, la qualification de vol relève d'un état du droit indécis et casuistique : la décision Thomson Reuters contre Ross, en février 2025, a refusé le fair use sur une intelligence artificielle non générative, tandis que la décision Kadrey contre Meta, en juin 2025, a jugé l'entraînement lui-même transformatif, et dans l'affaire britannique Getty contre Stability, fin 2025, Getty a abandonné sa revendication principale de contrefaçon et a été déboutée de la contrefaçon secondaire. Il n'y a pas de front juridique unifié. Le passage de l'idée que le modèle a été entraîné sur une œuvre à l'idée qu'il la reproduit est en outre statistiquement faible, la mémorisation extractible mesurée par les travaux sur les modèles de diffusion étant de l'ordre de quelques exemples extraits par million d'images générées. L'argument est robuste comme revendication d'un droit à venir, fragile comme constat d'illégalité acquise.</p>
+<p><strong>Travail.</strong> L'argument est solide sur le mécanisme et la cible, faible sur l'ampleur, imprudent sur la causalité. Le déplacement de tâches est réel, et la concentration de l'effet sur les postes d'entrée est la part la mieux étayée : l'étude de Stanford sur les données de paie de millions de salariés constate un déclin relatif d'emploi de l'ordre de treize pour cent pour les vingt-deux à vingt-cinq ans dans les métiers les plus exposés depuis fin 2022. En revanche, le registre de la dévastation de la majorité des métiers n'est soutenu par aucune mesure agrégée : l'analyse du Yale Budget Lab, à trente-trois mois, ne détecte aucune disruption macroéconomique. Le chiffre le plus cité, vingt et un virgule quatre pour cent des emplois du cinéma, de la télévision et de l'animation affectés d'ici 2026, provient d'une étude commandée à un cabinet d'économie et repose sur une enquête d'intentions auprès de trois cents dirigeants, non sur un comptage d'emplois supprimés. La contraction observée du secteur de l'animation est surdéterminée par d'autres causes, repli des commandes de streaming, séquelles des grèves de 2023, délocalisation, dont l'imputation exclusive à l'intelligence artificielle n'est pas établie.</p>
+<p><strong>Écologie.</strong> L'argument est solide au niveau macro, fragile au niveau du geste individuel. La trajectoire de demande électrique des infrastructures de calcul est réelle et rapide : l'Agence internationale de l'énergie projette un doublement de la consommation des centres de données d'ici 2030, et le rapport du Shift Project de 2025 documente une trajectoire jugée insoutenable, l'efficacité ne compensant pas la croissance de la demande. En revanche, les chiffres par requête longtemps brandis sont périmés ou reposent sur une confusion entre prélèvement et consommation d'eau, et la généralisation du refroidissement en circuit fermé, qui plonge les composants dans un fluide diélectrique, rend caduque une part de l'argument hydrique. Le problème est de gouvernance énergétique, d'emprise au sol et de réactivation d'infrastructures fossiles, non de moralité de l'usage individuel.</p>
+<p><strong>Désinformation et cognition.</strong> L'argument tient sur la production, déborde sur la diffusion. L'effondrement du coût de fabrication de contenus trompeurs plausibles est établi : le nombre de sites d'information générés par intelligence artificielle recensés par NewsGuard est passé d'une cinquantaine à plus de mille en dix-huit mois. En revanche, la consommation de désinformation est bornée par la demande et non par l'offre, l'effet électoral massif annoncé pour l'année 2024 ne s'est pas matérialisé selon les bilans du Knight Institute et de l'Ash Center de Harvard, et l'étude la plus médiatisée sur l'effet cognitif durable, conduite par le MIT, est méthodologiquement fragile et sur-interprétée.</p>
+<p><strong>Économie politique.</strong> L'argument vaut comme grille d'analyse, non comme loi déterministe. Que la technologie soit déployée sous contrainte de rentabilité et que les gains ne reviennent pas automatiquement au travail est défendable et documenté. En revanche, le mécanisme par lequel on en déduit une nécessité historique repose sur des prémisses disputées, et la conclusion selon laquelle il faudrait combattre plutôt que réguler est une position stratégique qui ne découle pas de l'analyse et qui abandonne des gains atteignables.</p>
+<p><strong>Non-neutralité de la technique.</strong> L'argument est solide dans sa version modérée, et se retourne contre sa version forte. Qu'aucune technique ne soit neutre est philosophiquement bien établi. Mais la non-neutralité signifie que la technique est traversée par le social et donc reconfigurable, non qu'elle soit condamnable par essence. La même prémisse fonde aussi bien le détournement critique que l'interdiction, ce qui montre que la conclusion prohibitionniste ne découle pas de la philosophie de la technique mais d'un choix politique distinct.</p>
+<p><strong>Bulle spéculative.</strong> L'argument est solide sur la finance, faible sur l'ontologie du produit. L'écart entre les dépenses d'infrastructure et les revenus est historiquement extrême, et un risque de correction sérieux est reconnu par des analystes non militants, de la note de Goldman Sachs de 2024 au rapport du MIT constatant que la quasi-totalité des projets d'intelligence artificielle en entreprise ne dégagent aucun retour mesurable. En revanche, l'affirmation que le produit ne serait ni un outil ni efficace est contredite par une adoption volontaire de masse et par des marges d'usage positives. Une bulle financière peut éclater sur une technologie pourtant durablement transformatrice, comme l'a montré la bulle des télécommunications à la fin des années 1990.</p>
+<h2 id="6-les-contradictions-internes-du-champ">6. Les contradictions internes du champ</h2>
+<p>Le champ critique abrite des contradictions que sa cohésion apparente dissimule. Réclamer un consentement préalable tout en exerçant, faute de mieux, le régime de réservation jugé inadéquat est une première tension, imposée par le droit en vigueur mais brouillant le message. Exiger une rémunération de l'entraînement revient à en accepter le principe, alors qu'une part de la base refuse l'exploitation même rémunérée : c'est le reproche qu'un syndicat de scénaristes a adressé à l'accord conclu en 2024 entre une société d'auteurs et une plateforme d'écriture assistée. Brandir ensemble l'argument écologique et l'argument propriétaire juxtapose deux thèses logiquement disjointes, l'une visant la soutenabilité, l'autre un marché de licences qui suppose davantage de calcul. Vouloir un label séparant proprement la création humaine de la production machine se heurte à l'impraticabilité de cette frontière pour toute pratique mixte. Enfin, le vocabulaire commun du refus recouvre une critique de gauche qui récuse l'essentialisme et un anti-industrialisme qui l'assume, deux positions politiquement incompatibles.</p>
+<p>Nommer ces contradictions n'affaiblit pas les revendications légitimes du champ. Cela en conditionne la rigueur. Une position qui veut être tenue les expose plutôt que de les taire, et choisit.</p>
+<p>Une difficulté plus profonde les traverse toutes. La distinction qui importe vraiment, entre une œuvre portée par un regard et une production industrielle automatisée, ne coïncide pas avec la frontière entre l'humain et la machine, et ne se laisse pas administrer. Un critère fondé sur le pourcentage d'intervention humaine ou sur un label exclut par construction une œuvre intégralement générée mais tenue par un auteur, manque une production entièrement humaine et pourtant sans vision, et demeure techniquement contournable. Le clivage opérant ne passe donc ni par l'outil ni par le taux d'humain. Il se joue plutôt sur deux plans que le débat recouvre : d'une part la présence d'un regard, qualitative et rétive à toute mesure par un guichet, d'autre part la propriété des moyens de production, c'est-à-dire le contrôle des modèles, du calcul et de la distribution, cette dernière couche étant celle vers laquelle la rente se déplace lorsque les modèles se banalisent. Sur ce diagnostic, le débat de l'humain contre la machine fonctionne comme un déplacement : il occupe le devant de la scène à la place de la question de la concentration des moyens et de l'industrialisation de la création. Quelle position en tirer reste, lui, un choix que cette structure n'impose pas.</p>
+<h2 id="7-la-case-laissée-ouverte">7. La case laissée ouverte</h2>
+<p>Par ses contradictions mêmes, le champ laisse structurellement ouverte une case : celle d'une position qui ne se range ni dans l'adoption ni dans le refus. La décrire n'est pas l'occuper. Ce n'est pas non plus le faire depuis nulle part : l'analyse qui en trace les contours occupe elle-même un point du champ, ce qu'il vaut mieux reconnaître que masquer derrière une neutralité de surplomb. On peut seulement en déduire la forme, c'est-à-dire les contraintes qu'une telle position devrait satisfaire pour être cohérente, sans préjuger qu'elle doive être tenue, ni par qui.</p>
+<p>Une première contrainte porte sur le consentement. Il n'existe pas, à ce jour, de modèle de base de qualité dont l'entraînement soit propre : les modèles utilisables sont prélevés, et les rares modèles entraînés sur des données licenciées ne sont pas compétitifs. Le consentement ne pourrait donc se loger à la couche du modèle de base, qui demeure impurifiable, mais à la couche d'adaptation, celle du matériau possédé, des personnes filmées et consentantes, et de l'entraînement spécifique opéré sur ce matériau.</p>
+<p>Une deuxième contrainte porte sur la transparence. Le badge binaire qui sépare le fait par un humain du généré par une machine est inutilisable pour les pratiques mixtes et se neutralise lui-même. Une transparence opérante serait graduée et située : elle documenterait qui a fait quoi, avec quoi, à partir de quel matériau, et à quel coût, comme geste de monstration plutôt que comme certification technique, dont la fiabilité est par ailleurs contestable, les standards de provenance existants étant aisément contournables.</p>
+<p>Une troisième contrainte porte sur le travail. La ligne ne passerait pas entre ceux qui utilisent l'outil et ceux qui s'en abstiennent, mais entre l'usage qui déqualifie un poste et l'usage qui le requalifie.</p>
+<p>Une quatrième question, proprement esthétique, resterait ouverte sans que la structure la tranche : entre un usage qui dénaturalise l'image, en la donnant pour un régime de fabrication parmi d'autres, et un usage qui la lisse jusqu'à effacer toute trace de fabrication, le choix relève d'une position d'auteur et non d'une condition générale.</p>
+<p>Une dernière contrainte porte sur la méthode. Ces contraintes ne vaudraient pas comme déclarations mais comme règles de production, vérifiables et rendues publiques : la cohérence se mesurerait à la traçabilité de la chaîne, non à la force du propos.</p>
+<p>Décrire cette case ne dit pas qu'elle doive être occupée. Elle se sépare seulement, par construction, de l'adoption qui tient le progrès pour neutre et inévitable, et du refus qui conclut de la non-neutralité d'une technique à son interdiction plutôt qu'à sa reconfiguration.</p>
+<h2 id="8-conclusion">8. Conclusion</h2>
+<p>Le débat sur l'intelligence artificielle générative dans la création n'oppose pas, comme sa mise en scène le laisse croire, un camp de l'adoption à un camp du refus. Il oppose des nuances de critique à l'intérieur d'un champ largement réformiste, sur un socle de revendications partagées. Les griefs qu'il agrège sont logiquement distincts et inégalement solides : robustes sur le prélèvement non consenti, sur le déplacement du travail vers les postes d'entrée et sur la trajectoire énergétique macroscopique ; fragiles sur la qualification juridique de vol, sur l'ampleur de la destruction d'emplois, sur le coût écologique du geste individuel et sur l'effet démocratique de masse. Aucune de ces faiblesses n'annule les revendications légitimes ; toutes invitent à les formuler avec davantage de rigueur.</p>
+<p>Dans cet espace, la case d'une position qui ne se range ni dans l'adoption ni dans le refus reste structurellement ouverte : elle se laisse décrire par des contraintes vérifiables, un consentement situé à la couche d'adaptation, une transparence graduée de la chaîne, la non-substitution du travail, une méthode rendue publique, sans qu'aucune de ces contraintes ne dise qu'elle doive être occupée. Cette note établit la structure du champ et la forme de cette case. Déterminer si elle doit être tenue, par qui, depuis quelle pratique et au nom de quoi, n'est pas son objet : c'est un acte d'auteur, distinct du présent travail de cadrage.</p>
+<hr />
+<h2 id="sources">Sources</h2>
+<h3 id="prises-de-position-du-champ">Prises de position du champ</h3>
+<ul>
+<li>Tribune inter-sociétés d'auteurs et d'artistes avant le Sommet de l'IA de Paris (ADAGP, Adami, Sacem, Scam, SGDL, Spedidam ; fév. 2025, plus de 34 000 signatures)</li>
+<li>Déclaration de la coalition syndicale internationale de l'animation, festival d'Annecy (juin 2025) ; reprise par Deadline, Variety, Animation Magazine</li>
+<li>Lettre ouverte à Magelis, « Protégeons les artistes et les technicien·nes face aux IA génératives » (oct. 2025), framaforms.org</li>
+<li>Les Intervalles, série « Positionnements professionnels, syndicats et législations » (nov. 2025), lesintervalles.fr</li>
+<li>Tribune appelant au boycott de l'IA générative grand public (Le Monde, 18 juin 2026)</li>
+<li>Romaric Godin, <em>Le problème à trois corps du capitalisme</em> (La Découverte, 2026), et l'entretien « L'IA est un système qui vise à discipliner les masses » (Là-bas si j'y suis, 2026)</li>
+<li>Accord SACD–Genario et opposition publique du Syndicat des Scénaristes (sept. 2024)</li>
+</ul>
+<h3 id="données-études-et-décisions-à-lappui-du-calibrage">Données, études et décisions (à l'appui du calibrage)</h3>
+<ul>
+<li>Propriété intellectuelle : règlement Anthropic (Bartz c. Anthropic, ~1,5 Md$, sept. 2025, acquisition piratée des livres d'entraînement) ; Thomson Reuters v. Ross (fév. 2025, pas de fair use, IA non générative) ; Kadrey v. Meta (juin 2025, entraînement transformatif) ; Getty v. Stability AI, Royaume-Uni (nov. 2025, revendication principale abandonnée, contrefaçon secondaire rejetée) ; Disney + Universal v. Midjourney (en cours, plainte juin 2025) ; Carlini et al. sur la mémorisation des modèles de diffusion (arXiv 2301.13188)</li>
+<li>Travail : CVL Economics, « Future Unscripted » (janv. 2024, 21,4 % / ~118 500 emplois, enquête auprès de 300 dirigeants) ; Stanford Digital Economy Lab, « Canaries in the Coal Mine » (2025) ; Yale Budget Lab (oct. 2025, pas de disruption agrégée)</li>
+<li>Écologie : IEA, « Energy and AI » (avril 2025) ; The Shift Project, « Intelligence artificielle, données, calculs » (oct. 2025) ; Epoch AI sur l'énergie par requête ; UC Riverside (Li et al.) sur l'empreinte hydrique</li>
+<li>Désinformation et cognition : NewsGuard (suivi des sites « news » IA) ; Goldstein et al., PNAS Nexus (2024, persuasion) ; Knight First Amendment Institute et Harvard Ash Center (bilans électoraux 2024) ; MIT Media Lab, « Your Brain on ChatGPT » (2025, et ses critiques)</li>
+<li>Économie et bulle : Goldman Sachs, « Gen AI: Too Much Spend, Too Little Benefit? » (2024) ; MIT, « The GenAI Divide » (2025) ; données de capex des hyperscalers (2025-2026)</li>
+</ul>
+<div class="meta">Genere depuis A-synthese-positions-ia-arts.md — 2026-06-24 02:26</div></div>
+</body>
+</html>
